@@ -1,0 +1,46 @@
+###
+
+Program: This is a how to guide for saving your terminal work to GitHub
+Author: Jesse R.
+Date: 11/6/2023
+###
+
+###
+    Section one: Connect your terminal with your git hub accout
+                {from your TERMINAL}
+    # save your github token to your terminal #
+         "export TOKEN=XXXXXXXXX"
+
+    # Save your USERNAME #
+        "export USERNAME=XXXXXXXXX"
+
+    # Save your EMAIL #
+        "export EMAIL=XXXXXXXXX"
+
+    # Download the following bash script #
+        "wget https://labs.alta3.com/courses/github/scripts/git-connect.sh"
+
+    # Run the script #
+        "bash ~/git-connect.sh"
+###
+
+###
+    Section two: Saving you work
+
+    " If you have not created a mycode directory do so now"
+
+    # Change to your code directory #
+        "cd ~/mycode"
+    
+    # List all files for github back up#
+        "git status"
+    
+    # Adding files to Move to github #
+        "git add /home/user/mycode/*" {replace path with path to your files}
+
+    # perform commit to make new version #
+        "git commit -m "reason for commit""
+
+    # Push new version for tracking #
+        "git push origin HEAD"
+###
